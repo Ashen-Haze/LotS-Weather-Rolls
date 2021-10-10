@@ -1,0 +1,21 @@
+{
+    "coverage": [
+        "clear",
+        "cloudy",
+        "overcast"
+    ],
+    "thunder": {
+        "chance": 0.25,
+        "conditions": [
+            {
+                "source": "clouds",
+                "minValue": 3
+            },
+            {
+                "source": "precipitation",
+                "type": "rain",
+                "minValue": 3
+            }
+        ]
+    }
+}

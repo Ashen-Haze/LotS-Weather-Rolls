@@ -1,0 +1,24 @@
+{
+    "seasonTemperatures": {
+        "spring": {
+            "low": 0,
+            "high": 0
+        },
+        "summer": {
+            "low": 0,
+            "high": 0
+        },
+        "autumn": {
+            "low": 0,
+            "high": 0
+        },
+        "winter": {
+            "low": 0,
+            "high": 0
+        }
+    },
+    "dailyVariation": {
+        "min": 5,
+        "max": 10
+    }
+}

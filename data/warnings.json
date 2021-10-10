@@ -1,0 +1,90 @@
+{
+    "warnings": [
+        {
+            "text": "Danger to elders and cats with less than short fur.",
+            "conditions": [
+                {
+                    "source": "temperature",
+                    "maxValue": 32
+                }
+            ]
+        },
+        {
+            "text": "Danger to cats with short fur.",
+            "conditions": [
+                {
+                    "source": "temperature",
+                    "maxValue": 20
+                },
+                {
+                    "source": "precipitation",
+                    "type": "rain",
+                    "minValue": 3
+                },
+                {
+                    "source": "precipitation",
+                    "type": "snow",
+                    "minValue": 1
+                },
+                {
+                    "source": "precipitation",
+                    "type": "sleet",
+                    "minValue": 1
+                }
+            ]
+        },
+        {
+            "text": "Danger to all cats.",
+            "conditions": [
+                {
+                    "source": "temperature",
+                    "maxValue": 10
+                },
+                {
+                    "source": "precipitation",
+                    "type": "hail",
+                    "minValue": 1
+                },
+                {
+                    "source": "precipitation",
+                    "type": "snow",
+                    "minValue": 3
+                },
+                {
+                    "source": "precipitation",
+                    "type": "sleet",
+                    "minValue": 3
+                }
+            ]
+        },
+        {
+            "text": "Danger of falling branches.",
+            "conditions": [
+                {
+                    "source": "precipitation",
+                    "type": "rain",
+                    "minValue": 3
+                },
+                {
+                    "source": "precipitation",
+                    "type": "hail",
+                    "minValue": 3
+                },
+                {
+                    "source": "precipitation",
+                    "type": "sleet",
+                    "minValue": 3
+                }
+            ]
+        },
+        {
+            "text": "Danger of small flying objects.",
+            "conditions": [
+                {
+                    "source": "wind",
+                    "minValue": 3
+                }
+            ]
+        }
+    ]
+}

@@ -20,7 +20,7 @@
             "name": "rain",
             "variants": [
                 {
-                    "name":"hail",
+                    "name": "hail",
                     "chance": 0.1,
                     "minTemp": 55
                 },

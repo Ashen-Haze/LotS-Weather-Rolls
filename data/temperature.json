@@ -1,24 +1,24 @@
 {
     "seasonTemperatures": {
         "spring": {
-            "low": 0,
-            "high": 0
+            "low": 45,
+            "high": 80
         },
         "summer": {
-            "low": 0,
-            "high": 0
+            "low": 50,
+            "high": 105
         },
         "autumn": {
-            "low": 0,
-            "high": 0
+            "low": 30,
+            "high": 75
         },
         "winter": {
             "low": 0,
-            "high": 0
+            "high": 60
         }
     },
     "dailyVariation": {
-        "min": 5,
-        "max": 10
+        "min": 3,
+        "max": 12
     }
 }

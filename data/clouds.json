@@ -9,7 +9,7 @@
         "conditions": [
             {
                 "source": "clouds",
-                "minValue": 3
+                "minValue": 2
             },
             {
                 "source": "precipitation",

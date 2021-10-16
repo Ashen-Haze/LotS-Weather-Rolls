@@ -4,11 +4,119 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="style.css" rel="stylesheet">
+    <title>LotS Weather Rolls</title>
+    <link href="layout.css" rel="stylesheet">
+    <link href="theme.css" rel="stylesheet">
     <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <div class="flex-row">
+        <table class="control-box">
+            <tr>
+                <th colspan="2">Options</th>
+            </tr>
+            <tr>
+                <td>
+                    <select id="season-select">
+                        <option selected disabled value="">Select a season...</option>
+                    </select>
+                </td>
+                <td>
+                    <button id="new-weather">Generate Weather</button>
+                </td>
+            </tr>
+            <tr>
+                <td hidden colspan="2">Temperatures will average from <b><span id="season-low"></span> °F</b> to <b><span id="season-high"></span> °F</b>.</td>
+            </tr>
+        </table>
+    </div>
+    <div class="flex-row">
+        <table class="col-box">
+            <tr>
+                <th colspan="2">Temperature</th>
+            </tr>
+            <tr>
+                <td>High Point</td>
+                <td hidden><span id="temp-low"></span> °F</td>
+            </tr>
+            <tr>
+                <td>Low Point</td>
+                <td hidden><span id="temp-high"></span> °F</td>
+            </tr>
+        </table>
+        <table class="col-box">
+            <tr>
+                <th colspan="2">Wind</th>
+            </tr>
+            <tr>
+                <td>Power</td>
+                <td id="wind-power"></td>
+            </tr>
+            <tr>
+                <td>Coverage</td>
+                <td id="wind-coverage"></td>
+            </tr>
+            <tr>
+                <td>Chilling</td>
+                <td></td>
+            </tr>
+        </table>
+        <table class="col-box">
+            <tr>
+                <th colspan="2">Clouds</th>
+            </tr>
+            <tr>
+                <td>Coverage</td>
+                <td id="cloud-coverage"></td>
+            </tr>
+            <tr>
+                <td>Thunder</td>
+                <td id="cloud-thunder"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="flex-row">
+        <table class="list-box">
+            <tr>
+                <th>Territories</th>
+            </tr>
+            <tr>
+                <td>
+                    <ul id="territory-list"></ul>
+                </td>
+            </tr>
+        </table>
+        <table class="col-box">
+            <tr>
+                <th colspan="2">Precipitation</th>
+            </tr>
+            <tr>
+                <td>Type</td>
+                <td id="precip-type"></td>
+            </tr>
+            <tr>
+                <td>Amount</td>
+                <td id="precip-amount"></td>
+            </tr>
+            <tr>
+                <td>Duration</td>
+                <td id="precip-duration"></td>
+            </tr>
+            <tr>
+                <td>Chilling</td>
+                <td id="precip-chill"></td>
+            </tr>
+        </table>
+        <table class="list-box">
+            <tr>
+                <th>Warnings</th>
+            </tr>
+            <tr>
+                <td>
+                    <ul id="warning-list"></ul>
+                </td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>

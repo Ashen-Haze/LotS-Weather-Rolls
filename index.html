@@ -25,8 +25,8 @@
                     <button id="new-weather">Generate Weather</button>
                 </td>
             </tr>
-            <tr>
-                <td hidden colspan="2">Temperatures will average from <b><span id="season-low"></span> °F</b> to <b><span id="season-high"></span> °F</b>.</td>
+            <tr hidden id="season-temps">
+                <td colspan="2">Temperatures will average from <b><span id="season-low"></span> °F</b> to <b><span id="season-high"></span> °F</b>.</td>
             </tr>
         </table>
     </div>
@@ -37,11 +37,11 @@
             </tr>
             <tr>
                 <td>High Point</td>
-                <td hidden><span id="temp-low"></span> °F</td>
+                <td hidden><span id="temp-high"></span> °F</td>
             </tr>
             <tr>
                 <td>Low Point</td>
-                <td hidden><span id="temp-high"></span> °F</td>
+                <td hidden><span id="temp-low"></span> °F</td>
             </tr>
         </table>
         <table class="col-box">
@@ -49,16 +49,12 @@
                 <th colspan="2">Wind</th>
             </tr>
             <tr>
-                <td>Power</td>
-                <td id="wind-power"></td>
-            </tr>
-            <tr>
-                <td>Coverage</td>
-                <td id="wind-coverage"></td>
+                <td>Speed</td>
+                <td id="wind-speed"></td>
             </tr>
             <tr>
                 <td>Chilling</td>
-                <td></td>
+                <td id="wind-chilling"></td>
             </tr>
         </table>
         <table class="col-box">
@@ -82,7 +78,9 @@
             </tr>
             <tr>
                 <td>
-                    <ul id="territory-list"></ul>
+                    <ul id="territory-list">
+                        <p hidden>Reduced weather effect in:</p>
+                    </ul>
                 </td>
             </tr>
         </table>
@@ -91,20 +89,20 @@
                 <th colspan="2">Precipitation</th>
             </tr>
             <tr>
-                <td>Type</td>
-                <td id="precip-type"></td>
+                <td>Types</td>
+                <td id="precip-types"></td>
             </tr>
             <tr>
                 <td>Amount</td>
                 <td id="precip-amount"></td>
             </tr>
             <tr>
-                <td>Duration</td>
-                <td id="precip-duration"></td>
+                <td>Frequency</td>
+                <td id="precip-frequency"></td>
             </tr>
             <tr>
                 <td>Chilling</td>
-                <td id="precip-chill"></td>
+                <td id="precip-chilling"></td>
             </tr>
         </table>
         <table class="list-box">

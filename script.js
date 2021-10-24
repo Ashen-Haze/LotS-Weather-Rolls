@@ -4,23 +4,23 @@ const data = {
     seasons: [
         {
             text: "Newleaf (Spring)",
-            lowestTemp: 40,
-            highestTemp: 75,
+            lowestTemp: 45,
+            highestTemp: 80,
         },
         {
             text: "Greenleaf (Summer)",
             lowestTemp: 55,
-            highestTemp: 100,
+            highestTemp: 95,
         },
         {
             text: "Leaf-fall (Autumn)",
             lowestTemp: 30,
-            highestTemp: 75,
+            highestTemp: 70,
         },
         {
             text: "Leaf-bare (Winter)",
-            lowestTemp: 0,
-            highestTemp: 50,
+            lowestTemp: 5,
+            highestTemp: 45,
         },
     ],
     wind: {
@@ -152,14 +152,12 @@ function generateWeather() {
 
     // temperature range
     // low and high points can be 3-12 degrees from the basis
-    // but they cannot exceed the seasonal low and high points
+    // they CAN exceed the seasonal low and high points
     const season = data.seasons[seasonSelect.value];
     const tempBasis = randomNum(season.lowestTemp, season.highestTemp);
 
     let lowTemp = tempBasis - randomNum(3, 12);
     let highTemp = tempBasis + randomNum(3, 12);
-    if (lowTemp < season.lowestTemp) lowTemp = season.lowestTemp;
-    if (highTemp > season.highestTemp) highTemp = season.highestTemp;
 
     weather.temp.low = lowTemp;
     weather.temp.high = highTemp;

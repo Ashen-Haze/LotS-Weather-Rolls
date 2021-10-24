@@ -151,13 +151,13 @@ function generateWeather() {
     };
 
     // temperature range
-    // low and high points can be 3-12 degrees from the basis
+    // low and high points will each be 3-12 degrees from the basis
     // they CAN exceed the seasonal low and high points
     const season = data.seasons[seasonSelect.value];
     const tempBasis = randomNum(season.lowestTemp, season.highestTemp);
-
-    let lowTemp = tempBasis - randomNum(3, 12);
-    let highTemp = tempBasis + randomNum(3, 12);
+    const tempDiff = randomNum(3, 12);
+    const lowTemp = tempBasis - tempDiff;
+    const highTemp = tempBasis + tempDiff;
 
     weather.temp.low = lowTemp;
     weather.temp.high = highTemp;
